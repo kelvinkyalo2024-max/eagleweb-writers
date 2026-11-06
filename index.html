@@ -8,17 +8,66 @@
 <title>Writers Hub | Eagle Web Commerce</title>
 <style>
 :root{--bg:#07121b;--panel:#10232d;--panel2:#132b36;--line:#203c48;--gold:#ffbf68;--text:#f4f7fa;--muted:#9eafb9;--teal:#65e0ca}
-*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--text);font:16px/1.55 system-ui,Arial,sans-serif}button,input,textarea{font:inherit}button{cursor:pointer}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);font:16px/1.55 system-ui,Arial,sans-serif}
+button,input,textarea{font:inherit}
+button{cursor:pointer}
 header{position:sticky;top:0;z-index:4;background:#07121bf5;border-bottom:1px solid var(--line)}
-.nav{max-width:1150px;margin:auto;padding:14px 20px;display:flex;align-items:center;gap:16px}.brand{margin-right:auto;font-weight:900;letter-spacing:2px}.brand b{color:var(--gold)}.brand small{display:block;color:var(--muted);font-size:10px}
-.btn{display:inline-block;padding:11px 17px;border:0;border-radius:28px;background:var(--gold);color:#15191d;font-weight:800;text-decoration:none}.outline{background:transparent;color:var(--text);border:1px solid var(--line)}.teal{background:var(--teal)}
-main{max-width:1150px;margin:auto;padding:28px 20px 70px}.hero{padding:42px 30px;border:1px solid var(--line);border-radius:26px;background:radial-gradient(circle at 90% 0%,#244957,transparent 40%),linear-gradient(135deg,#102630,#0d1c26)}.eyebrow{color:var(--gold);font-size:12px;letter-spacing:3px;font-weight:900}.hero h1{font-size:clamp(34px,6vw,58px);line-height:1.1;margin:12px 0}.hero p,.card p{color:var(--muted)}section{margin-top:42px}.section-head{display:flex;justify-content:space-between;gap:12px;align-items:end;flex-wrap:wrap}.section-head p,.muted{color:var(--muted);font-size:13px}
-.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:15px}.card{background:var(--panel);border:1px solid var(--line);border-radius:20px;padding:20px}.job{display:flex;flex-direction:column;min-height:245px}.tag{display:inline-block;padding:4px 10px;background:#183642;color:var(--teal);border-radius:20px;font-size:12px;font-weight:800;align-self:flex-start}.job h3{margin:12px 0 7px;font-size:18px}.job p{color:var(--muted);margin:0 0 14px}.job-meta{display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap;margin-top:auto;padding-top:12px;border-top:1px solid var(--line)}.prize{color:var(--gold);font-weight:900}.client{font-size:12px;color:var(--muted);text-align:right}.client strong{display:block;color:#dce7eb;font-size:13px}.phone{padding:13px;background:#0b1c26;border:1px dashed #52707b;border-radius:13px;margin:12px 0}.field{display:grid;gap:7px;margin:12px 0}.field label{font-size:13px;color:var(--muted)}.field input,.field textarea{width:100%;padding:13px;background:#091923;border:1px solid var(--line);border-radius:11px;color:white}.field textarea{min-height:95px}.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.stat{text-align:center}.stat strong{display:block;font-size:29px;color:var(--gold)}.stat span{color:var(--muted);font-size:13px}.split{display:grid;grid-template-columns:1fr 1fr;gap:15px}
+.nav{max-width:1150px;margin:auto;padding:14px 20px;display:flex;align-items:center;gap:16px}
+.brand{margin-right:auto;font-weight:900;letter-spacing:2px}
+.brand b{color:var(--gold)}
+.brand small{display:block;color:var(--muted);font-size:10px}
+.btn{display:inline-block;padding:11px 17px;border:0;border-radius:28px;background:var(--gold);color:#15191d;font-weight:800;text-decoration:none}
+.outline{background:transparent;color:var(--text);border:1px solid var(--line)}
+.teal{background:var(--teal)}
+main{max-width:1150px;margin:auto;padding:28px 20px 70px}
+.hero{padding:42px 30px;border:1px solid var(--line);border-radius:26px;background:radial-gradient(circle at 90% 0%,#244957,transparent 40%),linear-gradient(135deg,#102630,#0d1c26)}
+.eyebrow{color:var(--gold);font-size:12px;letter-spacing:3px;font-weight:900}
+.hero h1{font-size:clamp(34px,6vw,58px);line-height:1.1;margin:12px 0}
+.hero p,.card p{color:var(--muted)}
+section{margin-top:42px}
+.section-head{display:flex;justify-content:space-between;gap:12px;align-items:end;flex-wrap:wrap}
+.section-head p,.muted{color:var(--muted);font-size:13px}
+.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:15px}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:20px;padding:20px}
+.job{display:flex;flex-direction:column;min-height:245px}
+.tag{display:inline-block;padding:4px 10px;background:#183642;color:var(--teal);border-radius:20px;font-size:12px;font-weight:800;align-self:flex-start}
+.job h3{margin:12px 0 7px;font-size:18px}
+.job p{color:var(--muted);margin:0 0 14px}
+.job-meta{display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap;margin-top:auto;padding-top:12px;border-top:1px solid var(--line)}
+.prize{color:var(--gold);font-weight:900}
+.client{font-size:12px;color:var(--muted);text-align:right}
+.client strong{display:block;color:#dce7eb;font-size:13px}
+.phone{padding:13px;background:#0b1c26;border:1px dashed #52707b;border-radius:13px;margin:12px 0}
+.field{display:grid;gap:7px;margin:12px 0}
+.field label{font-size:13px;color:var(--muted)}
+.field input,.field textarea{width:100%;padding:13px;background:#091923;border:1px solid var(--line);border-radius:11px;color:white}
+.field textarea{min-height:95px}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.stat{text-align:center}
+.stat strong{display:block;font-size:29px;color:var(--gold)}
+.stat span{color:var(--muted);font-size:13px}
+.split{display:grid;grid-template-columns:1fr 1fr;gap:15px}
 footer{border-top:1px solid var(--line);padding:25px;text-align:center;color:var(--muted);font-size:13px}
-.modal{display:none;position:fixed;inset:0;background:#000b;z-index:10;align-items:center;justify-content:center;padding:18px}.modal.show{display:flex}.modal-box{width:min(520px,100%);background:var(--panel);border:1px solid #35515c;border-radius:22px;padding:24px}.close{float:right;background:transparent;border:0;color:white;font-size:24px}.toast{display:none;position:fixed;bottom:18px;left:50%;transform:translateX(-50%);z-index:30;background:#183b3b;border:1px solid #39766c;padding:12px 18px;border-radius:25px;max-width:90%}
+.modal{display:none;position:fixed;inset:0;background:#000b;z-index:10;align-items:center;justify-content:center;padding:18px}
+.modal.show{display:flex}
+.modal-box{width:min(520px,100%);background:var(--panel);border:1px solid #35515c;border-radius:22px;padding:24px}
+.close{float:right;background:transparent;border:0;color:white;font-size:24px}
+.toast{display:none;position:fixed;bottom:18px;left:50%;transform:translateX(-50%);z-index:30;background:#183b3b;border:1px solid #39766c;padding:12px 18px;border-radius:25px;max-width:90%}
 #loginGate{position:fixed;inset:0;z-index:50;background:radial-gradient(circle at 80% 5%,#234653,transparent 35%),var(--bg);display:flex;align-items:center;justify-content:center;padding:18px}
-.login-card{width:min(460px,100%);padding:30px;background:var(--panel);border:1px solid #35515c;border-radius:25px;box-shadow:0 20px 80px #0008}.login-card h1{margin:8px 0}.login-card p{color:var(--muted)}.login-card .btn{width:100%;margin-top:8px}.hidden{display:none!important}
-@media(max-width:760px){main{padding:20px 14px 55px}.grid,.split{grid-template-columns:1fr}.stats{grid-template-columns:1fr 1fr}.nav{padding:12px 14px}.hero{padding:30px 20px}.job{min-height:220px}}
+.login-card{width:min(460px,100%);padding:30px;background:var(--panel);border:1px solid #35515c;border-radius:25px;box-shadow:0 20px 80px #0008}
+.login-card h1{margin:8px 0}
+.login-card p{color:var(--muted)}
+.login-card .btn{width:100%;margin-top:8px}
+.hidden{display:none!important}
+@media(max-width:760px){
+main{padding:20px 14px 55px}
+.grid,.split{grid-template-columns:1fr}
+.stats{grid-template-columns:1fr 1fr}
+.nav{padding:12px 14px}
+.hero{padding:30px 20px}
+.job{min-height:220px}
+}
 </style>
 </head>
 <body>
@@ -30,21 +79,30 @@ footer{border-top:1px solid var(--line);padding:25px;text-align:center;color:var
     <h1>Welcome back.</h1>
     <p>Bind your Eagle Web account with Writers Hub today. Sign in using a separate Writers Hub email account.</p>
     <form id="loginForm">
-      <div class="field"><label for="loginEmail">Writers Hub email</label><input id="loginEmail" type="email" autocomplete="username" placeholder="you@example.com" required></div>
-      <div class="field"><label for="loginPassword">Writers Hub password</label><input id="loginPassword" type="password" autocomplete="current-password" placeholder="Enter password" required></div>
+      <div class="field">
+        <label for="loginEmail">Writers Hub email</label>
+        <input id="loginEmail" type="email" autocomplete="username" placeholder="you@example.com" required>
+      </div>
+      <div class="field">
+        <label for="loginPassword">Writers Hub password</label>
+        <input id="loginPassword" type="password" autocomplete="current-password" placeholder="Enter password" required>
+      </div>
       <button class="btn" type="submit">Login to Writers Hub</button>
     </form>
     <p class="muted">Earnings are taxed and certified by the Kenya Revenue Authority.</p>
   </div>
 </div>
 
-<header><div class="nav">
+<header>
+<div class="nav">
   <div class="brand"><b>✦</b> WRITERS HUB<small>ACADEMIC WRITING</small></div>
   <a class="btn outline" href="#jobs">Essay jobs</a>
   <a class="btn" href="#membership">Subscribe</a>
-</div></header>
+</div>
+</header>
 
 <main id="siteContent" class="hidden">
+
   <div class="hero">
     <div class="eyebrow">THINK CLEARLY · WRITE BOLDLY · BUILD YOUR FUTURE</div>
     <h1>Focus on writing.<br><span style="color:var(--gold)">Write for a future.</span></h1>
@@ -53,26 +111,46 @@ footer{border-top:1px solid var(--line);padding:25px;text-align:center;color:var
     <a class="btn outline" href="https://wa.me/254786854599" target="_blank" rel="noopener">Contact admin</a>
   </div>
 
+  <!-- UPDATED RECRUITMENT COUNTDOWN -->
   <section id="recruitmentCountdown" class="card" style="margin-top:18px;border-color:#80633d;background:linear-gradient(135deg,#172d36,#10232d)">
     <div class="eyebrow">RECRUITMENT WINDOW</div>
-    <h2 style="margin:8px 0;color:var(--gold)">Applications close Friday</h2>
-    <p class="muted" style="margin:0 0 14px">The recruitment window ends Friday, 6 November 2026 at 11:59 PM (Kenya time).</p>
+    <h2 style="margin:8px 0;color:var(--gold)">Applications extended to Friday, 20 November</h2>
+    <p class="muted" style="margin:0 0 14px">The recruitment window has been extended to Friday, 20 November 2026 at 11:59 PM (Kenya time).</p>
+
     <div id="countdown" style="display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px;text-align:center">
-      <div class="phone"><strong id="cdDays" style="display:block;font-size:28px;color:var(--gold)">--</strong><span class="muted">Days</span></div>
-      <div class="phone"><strong id="cdHours" style="display:block;font-size:28px;color:var(--gold)">--</strong><span class="muted">Hours</span></div>
-      <div class="phone"><strong id="cdMinutes" style="display:block;font-size:28px;color:var(--gold)">--</strong><span class="muted">Minutes</span></div>
-      <div class="phone"><strong id="cdSeconds" style="display:block;font-size:28px;color:var(--gold)">--</strong><span class="muted">Seconds</span></div>
+      <div class="phone">
+        <strong id="cdDays" style="display:block;font-size:28px;color:var(--gold)">--</strong>
+        <span class="muted">Days</span>
+      </div>
+      <div class="phone">
+        <strong id="cdHours" style="display:block;font-size:28px;color:var(--gold)">--</strong>
+        <span class="muted">Hours</span>
+      </div>
+      <div class="phone">
+        <strong id="cdMinutes" style="display:block;font-size:28px;color:var(--gold)">--</strong>
+        <span class="muted">Minutes</span>
+      </div>
+      <div class="phone">
+        <strong id="cdSeconds" style="display:block;font-size:28px;color:var(--gold)">--</strong>
+        <span class="muted">Seconds</span>
+      </div>
     </div>
     <p id="countdownStatus" class="muted" aria-live="polite" style="margin:12px 0 0">Time remaining to apply.</p>
   </section>
 
   <div class="card" style="margin-top:18px">
-    <strong>Prize conversion:</strong> Each tasks prize is from KSh 500–700 and converted to USD using an indicative rate of 1 KES = $0.00769704. Approximate range: <strong>$3.85–$5.39 per page.</strong>
-    <div class="muted">Exchange rates change in real time. Do not disclose Client contact details.</div>
+    <strong>Prize conversion:</strong> Each task's prize is from KSh 500–700 and converted to USD using an indicative rate of 1 KES = $0.00769704. Approximate range: <strong>$3.85–$5.39 per page.</strong>
+    <div class="muted">Exchange rates change in real time. Do not disclose client contact details.</div>
   </div>
 
   <section id="jobs">
-    <div class="section-head"><div><h2>Available essay questions</h2><p>Tap any question to see the access prompt. Maximum assignment length: 4 pages.</p></div><span class="tag">60 writing prompts</span></div>
+    <div class="section-head">
+      <div>
+        <h2>Available essay questions</h2>
+        <p>Tap any question to see the access prompt. Maximum assignment length: 4 pages.</p>
+      </div>
+      <span class="tag">60 writing prompts</span>
+    </div>
     <div class="grid" id="questionGrid"></div>
   </section>
 
@@ -82,8 +160,15 @@ footer{border-top:1px solid var(--line);padding:25px;text-align:center;color:var
       <div class="eyebrow">WRITERS HUB ACCESS</div>
       <h2 style="color:var(--gold);font-size:40px;margin:8px 0">KSh 5,000 <small class="muted">one-time</small></h2>
       <p>Activation request after payment verification.</p>
-      <div class="phone"><span class="muted">M-Pesa payment / admin number</span><br><strong style="font-size:22px">0786854599</strong> <button class="btn" onclick="copyNumber()">Copy number</button></div>
-      <div class="field"><label for="mpesaMessage">Paste M-Pesa message for activation</label><textarea id="mpesaMessage" placeholder="Paste M-Pesa confirmation message here"></textarea></div>
+      <div class="phone">
+        <span class="muted">M-Pesa payment / admin number</span><br>
+        <strong style="font-size:22px">0786854599</strong>
+        <button class="btn" onclick="copyNumber()">Copy number</button>
+      </div>
+      <div class="field">
+        <label for="mpesaMessage">Paste M-Pesa message for activation</label>
+        <textarea id="mpesaMessage" placeholder="Paste M-Pesa confirmation message here"></textarea>
+      </div>
       <button class="btn teal" onclick="sendActivation()">Send activation request on WhatsApp</button>
       <p class="muted">Never share your M-Pesa PIN or OTP.</p>
     </div>
@@ -96,13 +181,26 @@ footer{border-top:1px solid var(--line);padding:25px;text-align:center;color:var
       <div class="card stat"><strong>$0.00</strong><span>Available balance</span></div>
       <div class="card stat"><strong>0</strong><span>Completed jobs</span></div>
     </div>
+
     <div class="split" style="margin-top:15px">
-      <div class="card"><h3>M-Pesa withdrawal request</h3>
-        <div class="field"><label>M-Pesa number</label><input id="withdrawNumber" placeholder="07XXXXXXXX"></div>
-        <div class="field"><label>Amount (USD converted to KSH as per rates)</label><input id="withdrawAmount" type="number" min="1" placeholder="Enter amount"></div>
+      <div class="card">
+        <h3>M-Pesa withdrawal request</h3>
+        <div class="field">
+          <label>M-Pesa number</label>
+          <input id="withdrawNumber" placeholder="07XXXXXXXX">
+        </div>
+        <div class="field">
+          <label>Amount (USD converted to KSH as per rates)</label>
+          <input id="withdrawAmount" type="number" min="1" placeholder="Enter amount">
+        </div>
         <button class="btn" onclick="withdrawRequest()">Request withdrawal</button>
       </div>
-      <div class="card"><h3>Payment process</h3><p>Agree on the assignment, page count, rate and deadline before starting. Confirm delivery and payment directly with the client.</p><p class="muted">Withdrawals processed and paid within 30 minutes.</p></div>
+
+      <div class="card">
+        <h3>Payment process</h3>
+        <p>Agree on the assignment, page count, rate and deadline before starting. Confirm delivery and payment directly with the client.</p>
+        <p class="muted">Withdrawals processed and paid within 30 minutes.</p>
+      </div>
     </div>
   </section>
 
@@ -113,6 +211,7 @@ footer{border-top:1px solid var(--line);padding:25px;text-align:center;color:var
       <a class="btn" href="https://wa.me/254786854599" target="_blank" rel="noopener">WhatsApp admin · 0786854599</a>
     </div>
   </section>
+
 </main>
 
 <footer>© 2026 Writers Hub · Independent academic writing workspace</footer>
@@ -127,10 +226,12 @@ footer{border-top:1px solid var(--line);padding:25px;text-align:center;color:var
     <a class="btn outline" href="https://wa.me/254786854599" target="_blank" rel="noopener">Contact admin</a>
   </div>
 </div>
+
 <div class="toast" id="toast" role="status"></div>
 
 <script>
 const KES_TO_USD = 0.00769704;
+
 const questions = [
 ["Health Sciences","The role of medical imaging in early disease diagnosis"],
 ["Health Sciences","Compare the clinical applications of CT and MRI"],
@@ -206,46 +307,114 @@ const sampleContacts = [
 
 function renderQuestions(){
   const grid=document.getElementById('questionGrid');
+
   questions.forEach((item,index)=>{
     const kes=Math.floor(Math.random()*201)+500;
     const usd=(kes*KES_TO_USD).toFixed(2);
     const contact=sampleContacts[index%sampleContacts.length];
+
     const card=document.createElement('article');
     card.className='card job';
-    const tag=document.createElement('span');tag.className='tag';tag.textContent=item[0];
-    const title=document.createElement('h3');title.textContent=String(index+1).padStart(2,'0')+'. '+item[1];
-    const desc=document.createElement('p');desc.textContent='Academic essay prompt. Maximum length: 4 pages. Confirm the brief, citation style and deadline before accepting.';
-    const meta=document.createElement('div');meta.className='job-meta';
+
+    const tag=document.createElement('span');
+    tag.className='tag';
+    tag.textContent=item[0];
+
+    const title=document.createElement('h3');
+    title.textContent=String(index+1).padStart(2,'0')+'. '+item[1];
+
+    const desc=document.createElement('p');
+    desc.textContent='Academic essay prompt. Maximum length: 4 pages. Confirm the brief, citation style and deadline before accepting.';
+
+    const meta=document.createElement('div');
+    meta.className='job-meta';
+
     const left=document.createElement('div');
     left.innerHTML='<div class="prize">Prize: $'+usd+'</div><div class="muted">Random estimate · KSh '+kes+'</div>';
-    const right=document.createElement('div');right.className='client';
+
+    const right=document.createElement('div');
+    right.className='client';
     right.innerHTML='<strong>'+contact.country+' client</strong>'+contact.number;
-    const btn=document.createElement('button');btn.className='btn';btn.textContent='View question';
+
+    const btn=document.createElement('button');
+    btn.className='btn';
+    btn.textContent='View question';
     btn.addEventListener('click',()=>locked(item[1]));
+
     meta.append(left,right);
     card.append(tag,title,desc,meta,btn);
     grid.appendChild(card);
   });
 }
-function toast(message){const el=document.getElementById('toast');el.textContent=message;el.style.display='block';setTimeout(()=>el.style.display='none',3000)}
-function openModal(id){document.getElementById(id).classList.add('show')}
-function closeModal(id){document.getElementById(id).classList.remove('show')}
-function locked(title){document.getElementById('modalQuestion').textContent=title;openModal('jobModal')}
-async function copyNumber(){try{await navigator.clipboard.writeText('0786854599');toast('M-Pesa number copied.')}catch(e){toast('M-Pesa number: 0786854599')}}
-function sendActivation(){const msg=document.getElementById('mpesaMessage').value.trim();if(!msg){toast('Paste your M-Pesa message first.');return}const text='Hello, I request Writers Hub activation. M-Pesa reference: '+msg;window.open('https://wa.me/254786854599?text='+encodeURIComponent(text),'_blank','noopener')}
-function withdrawRequest(){const n=document.getElementById('withdrawNumber').value.trim(),a=document.getElementById('withdrawAmount').value;if(!n||!a||Number(a)<=0){toast('Enter a valid M-Pesa number and amount.');return}toast(' Withdrawal was sent.')}
 
-// Recruitment closes Friday, 6 November 2026 at 11:59:59 PM Kenya time (UTC+3).
-const recruitmentDeadline = new Date('2026-11-06T23:59:59+03:00').getTime();
+function toast(message){
+  const el=document.getElementById('toast');
+  el.textContent=message;
+  el.style.display='block';
+  setTimeout(()=>el.style.display='none',3000);
+}
+
+function openModal(id){
+  document.getElementById(id).classList.add('show');
+}
+
+function closeModal(id){
+  document.getElementById(id).classList.remove('show');
+}
+
+function locked(title){
+  document.getElementById('modalQuestion').textContent=title;
+  openModal('jobModal');
+}
+
+async function copyNumber(){
+  try{
+    await navigator.clipboard.writeText('0786854599');
+    toast('M-Pesa number copied.');
+  }catch(e){
+    toast('M-Pesa number: 0786854599');
+  }
+}
+
+function sendActivation(){
+  const msg=document.getElementById('mpesaMessage').value.trim();
+
+  if(!msg){
+    toast('Paste your M-Pesa message first.');
+    return;
+  }
+
+  const text='Hello, I request Writers Hub activation. M-Pesa reference: '+msg;
+  window.open('https://wa.me/254786854599?text='+encodeURIComponent(text),'_blank','noopener');
+}
+
+function withdrawRequest(){
+  const n=document.getElementById('withdrawNumber').value.trim();
+  const a=document.getElementById('withdrawAmount').value;
+
+  if(!n||!a||Number(a)<=0){
+    toast('Enter a valid M-Pesa number and amount.');
+    return;
+  }
+
+  toast('Withdrawal request received.');
+}
+
+/* UPDATED DEADLINE: 20 NOVEMBER 2026, 11:59 PM KENYA TIME */
+const recruitmentDeadline =
+  new Date('2026-11-20T23:59:59+03:00').getTime();
 
 function updateRecruitmentCountdown(){
+
   const remaining = recruitmentDeadline - Date.now();
   const status = document.getElementById('countdownStatus');
 
   if(remaining <= 0){
+
     ['cdDays','cdHours','cdMinutes','cdSeconds'].forEach(id =>
       document.getElementById(id).textContent = '00'
     );
+
     status.textContent = 'Recruitment window closed.';
     return;
   }
@@ -255,26 +424,27 @@ function updateRecruitmentCountdown(){
   const minutes = Math.floor((remaining % 3600000) / 60000);
   const seconds = Math.floor((remaining % 60000) / 1000);
 
-  document.getElementById('cdDays').textContent = String(days).padStart(2,'0');
-  document.getElementById('cdHours').textContent = String(hours).padStart(2,'0');
-  document.getElementById('cdMinutes').textContent = String(minutes).padStart(2,'0');
-  document.getElementById('cdSeconds').textContent = String(seconds).padStart(2,'0');
+  document.getElementById('cdDays').textContent =
+    String(days).padStart(2,'0');
+
+  document.getElementById('cdHours').textContent =
+    String(hours).padStart(2,'0');
+
+  document.getElementById('cdMinutes').textContent =
+    String(minutes).padStart(2,'0');
+
+  document.getElementById('cdSeconds').textContent =
+    String(seconds).padStart(2,'0');
+
   status.textContent = 'Time remaining to apply.';
 }
 
 updateRecruitmentCountdown();
 setInterval(updateRecruitmentCountdown, 1000);
 
+/* DEMO LOGIN */
 document.getElementById('loginForm').addEventListener('submit',function(e){
+
   e.preventDefault();
-  document.getElementById('loginGate').classList.add('hidden');
-  document.getElementById('siteContent').classList.remove('hidden');
-  renderQuestions();
-  toast('login successful. Welcome to Writers Hub.');
-});
-document.addEventListener('click',e=>{
-  if(e.target.classList.contains('modal'))e.target.classList.remove('show');
-});
-</script>
-</body>
-</html>
+
+  document.getElementById('loginGate').classList.add('hidd
